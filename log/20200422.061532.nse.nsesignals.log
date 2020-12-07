@@ -1,0 +1,46 @@
+13264  2020-04-22 06:15:32,400 INFO create_logger 19 ::: ******************log file created*****************
+13264  2020-04-22 06:15:32,400 INFO get_config 14 ::: ******************confReader.py start executing*****************
+13264  2020-04-22 06:15:32,400 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+13264  2020-04-22 06:15:32,400 INFO create_logger 19 ::: ******************log file created*****************
+13264  2020-04-22 06:15:32,400 INFO get_config 14 ::: ******************confReader.py start executing*****************
+13264  2020-04-22 06:15:32,400 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+13264  2020-04-22 06:15:32,400 INFO main 70 ::: config file data :: {'inputdbprop': {'hostname': 'localhost', 'dbname': 'nse', 'dbusername': 'nse', 'dbpassword': 'Happy123'}, 'tablename': 'nsesignals', 'sqlconnection': '../sql/nsesignals.sql', 'requirements': '../lib/requirements.txt'}
+13264  2020-04-22 06:15:32,400 INFO sys_installed_packages 15 ::: ******************packageInstallation.py start executing*****************
+13264  2020-04-22 06:15:33,085 INFO sys_installed_packages 26 ::: ******************pip or pip3 is checking already installed packages in system ******************
+13264  2020-04-22 06:15:33,085 INFO sys_install_packages 38 ::: ******************collected necessary packages for the smooth execution of the program from requirements.txt file in lib folder******************
+13264  2020-04-22 06:15:36,250 INFO sys_install_packages 65 ::: ******************packageInstallation.py completed successfully******************
+13264  2020-04-22 06:15:36,250 INFO create_logger 19 ::: ******************log file created*****************
+13264  2020-04-22 06:15:36,250 INFO main 55 ::: ******************sqlConnection.py start executing*****************
+13264  2020-04-22 06:15:36,250 INFO get_config 14 ::: ******************confReader.py start executing*****************
+13264  2020-04-22 06:15:36,250 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+13264  2020-04-22 06:15:36,250 INFO main 58 ::: config file data :: {'inputdbprop': {'hostname': 'localhost', 'dbname': 'nse', 'dbusername': 'nse', 'dbpassword': 'Happy123'}, 'tablename': 'nsesignals', 'sqlconnection': '../sql/nsesignals.sql', 'requirements': '../lib/requirements.txt'}
+13264  2020-04-22 06:15:36,268 INFO sqlConnet 15 ::: ******************connected to mysql******************
+13264  2020-04-22 06:15:36,282 INFO tableCreation 37 ::: ******************mysql database created***************
+13264  2020-04-22 06:15:36,282 INFO tableCreation 38 ::: query == CREATE DATABASE  IF NOT EXISTS `nse`
+13264  2020-04-22 06:15:36,282 ERROR tableCreation 43 ::: error :: table creation error 1050 (42S01): Table 'nsesignals' already exists
+Traceback (most recent call last):
+  File "C:\Users\sainikeshk\AppData\Roaming\Python\Python37\site-packages\mysql\connector\connection_cext.py", line 489, in cmd_query
+    raw_as_string=raw_as_string)
+_mysql_connector.MySQLInterfaceError: Table 'nsesignals' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\signals and decisions\bin\sqlConnection.py", line 34, in tableCreation
+    cur.execute(query)
+  File "C:\Users\sainikeshk\AppData\Roaming\Python\Python37\site-packages\mysql\connector\cursor_cext.py", line 266, in execute
+    raw_as_string=self._raw_as_string)
+  File "C:\Users\sainikeshk\AppData\Roaming\Python\Python37\site-packages\mysql\connector\connection_cext.py", line 492, in cmd_query
+    sqlstate=exc.sqlstate)
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'nsesignals' already exists
+13264  2020-04-22 06:15:36,313 WARNING tableCreation 44 ::: warning :: table creation warning == 1050 (42S01): Table 'nsesignals' already exists
+13264  2020-04-22 06:15:36,313 INFO tableCreation 47 ::: ******************sqlConnection.py execution completed******************
+13264  2020-04-22 06:15:36,313 INFO create_logger 19 ::: ******************log file created*****************
+13264  2020-04-22 06:15:36,313 INFO get_config 14 ::: ******************confReader.py start executing*****************
+13264  2020-04-22 06:15:36,313 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+13264  2020-04-22 06:15:36,313 INFO main 1305 ::: config file data :: {'inputdbprop': {'hostname': 'localhost', 'dbname': 'nse', 'dbusername': 'nse', 'dbpassword': 'Happy123'}, 'tablename': 'nsesignals', 'sqlconnection': '../sql/nsesignals.sql', 'requirements': '../lib/requirements.txt'}
+13264  2020-04-22 06:15:36,313 INFO db_connet 1238 ::: ******************connected to output table in mysql******************
+13264  2020-04-22 06:15:36,313 INFO getSignals 1247 ::: ******************get signal execution started***********************
+13264  2020-04-22 06:15:36,313 INFO getSignals 1252 ::: *******************Database connection established********************
+13264  2020-04-22 06:16:13,767 INFO getSignals 1256 ::: ****************Required data fetched from database*********************
+13264  2020-04-22 06:16:14,441 INFO getSignals 1262 ::: *************************Function for signal mining created******************

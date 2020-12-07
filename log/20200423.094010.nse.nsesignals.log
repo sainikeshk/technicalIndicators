@@ -1,0 +1,137 @@
+18256  2020-04-23 09:40:10,899 INFO create_logger 19 ::: ******************log file created*****************
+18256  2020-04-23 09:40:10,899 INFO get_config 14 ::: ******************confReader.py start executing*****************
+18256  2020-04-23 09:40:10,899 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+18256  2020-04-23 09:40:10,899 INFO create_logger 19 ::: ******************log file created*****************
+18256  2020-04-23 09:40:10,899 INFO get_config 14 ::: ******************confReader.py start executing*****************
+18256  2020-04-23 09:40:10,899 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+18256  2020-04-23 09:40:10,915 INFO main 70 ::: config file data :: {'inputdbprop': {'hostname': 'localhost', 'dbname': 'nse', 'dbusername': 'nse', 'dbpassword': 'Happy123'}, 'tablename': 'nsesignals', 'sqlconnection': '../sql/nsesignals.sql', 'requirements': '../lib/requirements.txt'}
+18256  2020-04-23 09:40:10,915 INFO sys_installed_packages 15 ::: ******************packageInstallation.py start executing*****************
+18256  2020-04-23 09:40:11,627 INFO sys_installed_packages 26 ::: ******************pip or pip3 is checking already installed packages in system ******************
+18256  2020-04-23 09:40:11,627 INFO sys_install_packages 38 ::: ******************collected necessary packages for the smooth execution of the program from requirements.txt file in lib folder******************
+18256  2020-04-23 09:40:14,783 INFO sys_install_packages 65 ::: ******************packageInstallation.py completed successfully******************
+18256  2020-04-23 09:40:14,783 INFO create_logger 19 ::: ******************log file created*****************
+18256  2020-04-23 09:40:14,783 INFO main 55 ::: ******************sqlConnection.py start executing*****************
+18256  2020-04-23 09:40:14,783 INFO get_config 14 ::: ******************confReader.py start executing*****************
+18256  2020-04-23 09:40:14,783 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+18256  2020-04-23 09:40:14,783 INFO main 58 ::: config file data :: {'inputdbprop': {'hostname': 'localhost', 'dbname': 'nse', 'dbusername': 'nse', 'dbpassword': 'Happy123'}, 'tablename': 'nsesignals', 'sqlconnection': '../sql/nsesignals.sql', 'requirements': '../lib/requirements.txt'}
+18256  2020-04-23 09:40:14,799 INFO sqlConnet 15 ::: ******************connected to mysql******************
+18256  2020-04-23 09:40:14,815 INFO tableCreation 37 ::: ******************mysql database created***************
+18256  2020-04-23 09:40:14,815 INFO tableCreation 38 ::: query == CREATE DATABASE  IF NOT EXISTS `nse`
+18256  2020-04-23 09:40:14,837 INFO tableCreation 40 ::: ******************mysql table created******************
+18256  2020-04-23 09:40:14,837 INFO tableCreation 41 ::: query == CREATE TABLE IF NOT EXISTS `nsesignals` (`symbol` varchar(16) NOT NULL PRIMARY KEY,`series` varchar(16) NOT NULL,`timestamp` datetime NOT NULL,`close_adj` double DEFAULT NULL,`prev_close_adj` double DEFAULT NULL,`money_flow_index` double DEFAULT NULL,`money_flow_index_decisions` varchar(45) DEFAULT NULL,`accumulation_distribution` double DEFAULT NULL,`accumulation_distribution_decisions` varchar(45) DEFAULT NULL,`on_balance_volume` double DEFAULT NULL,`on_balance_volume_decisions` varchar(45) DEFAULT NULL,`ease_of_movement` double DEFAULT NULL,`ease_of_movement_decisions` varchar(45) DEFAULT NULL,`exponential_moving_average` double DEFAULT NULL,`exponential_moving_average_decisions` varchar(45) DEFAULT NULL,`momentum` double DEFAULT NULL,`momentum_decisions` varchar(45) DEFAULT NULL,`chaikin_oscillator` double DEFAULT NULL,`chaikin_oscillator_decisions` varchar(45) DEFAULT NULL,`bollinger_bands_m` double DEFAULT NULL,`bollinger_bands_u` double DEFAULT NULL,`bollinger_bands_d` double DEFAULT NULL,`bollinger_bands_decisions` varchar(45) DEFAULT NULL,`bollinger_bands_per` double DEFAULT NULL,`bollinger_bands_per_decisions` varchar(45) DEFAULT NULL,`williams_ad` double DEFAULT NULL,`williams_ad_decisions` varchar(45) DEFAULT NULL,`williams_r_per` double DEFAULT NULL,`williams_r_per_decisions` varchar(45) DEFAULT NULL,`trix` double DEFAULT NULL,`trix_decisions` varchar(45) DEFAULT NULL,`ultimate_oscillator` double DEFAULT NULL,`ultimate_oscillator_decisions` varchar(45) DEFAULT NULL,`true_strength_index` double DEFAULT NULL,`true_strength_index_decisions` varchar(45) DEFAULT NULL,`force_index` double DEFAULT NULL,`force_index_decisions` varchar(45) DEFAULT NULL,`coppock_curve` double DEFAULT NULL,`coppock_curve_decisions` varchar(45) DEFAULT NULL,`chaikin_money_flow` double DEFAULT NULL,`chaikin_money_flow_decisions` varchar(45) DEFAULT NULL,`keltner_channel_m` double DEFAULT NULL,`keltner_channel_u` double DEFAULT NULL,`keltner_channel_d` double DEFAULT NULL,`keltner_channel_decisions` varchar(45) DEFAULT NULL,`vortex_indicator_plus` double DEFAULT NULL,`vortex_indicator_minus` double DEFAULT NULL,`vortex_indicator_decisions` varchar(45) DEFAULT NULL,`know_sure_thing_oscillator` double DEFAULT NULL,`know_sure_thing_oscillator_decisions` varchar(45) DEFAULT NULL,`rate_of_change` double DEFAULT NULL,`rate_of_change_decisions` varchar(45) DEFAULT NULL,`piv_po` double DEFAULT NULL,`r1` double DEFAULT NULL,`r2` double DEFAULT NULL,`r3` double DEFAULT NULL,`s1` double DEFAULT NULL,`s2` double DEFAULT NULL,`s3` double DEFAULT NULL,`piv_po_decisions` varchar(45) DEFAULT NULL,`stochastic_oscillator_k` double DEFAULT NULL,`stochastic_oscillator_d` double DEFAULT NULL,`stochastic_oscillator_decisions` varchar(45) DEFAULT NULL,`commodity_chan_ind` double DEFAULT NULL,`commodity_chan_ind_decisions` varchar(45) DEFAULT NULL,`awesome_oscillator` double DEFAULT NULL,`awesome_oscillator_decisions` varchar(45) DEFAULT NULL,`detrended_price_oscillator` double DEFAULT NULL,`detrended_price_oscillator_decisions` varchar(45) DEFAULT NULL,`directional_movement_adx` double DEFAULT NULL,`directional_movement_net_di` double DEFAULT NULL,`directional_movement_oscillator_decisions` varchar(45) DEFAULT NULL,`elders_force_index` double DEFAULT NULL,`elders_force_index_decisions` varchar(45) DEFAULT NULL,`upper_envelope` double DEFAULT NULL,`lower_envelope` double DEFAULT NULL,`envelope_decisions` varchar(45) DEFAULT NULL,`acceleration_bands_middle` double DEFAULT NULL,`acceleration_bands_upper` double DEFAULT NULL,`acceleration_bands_lower` double DEFAULT NULL,`acceleration_bands_decisions` varchar(45) DEFAULT NULL,`price_channel_high` double DEFAULT NULL,`price_channel_low` double DEFAULT NULL,`price_channel_center` double DEFAULT NULL,`price_channel_decisions` varchar(45) DEFAULT NULL,`percentage_price_oscillator` double DEFAULT NULL,`percentage_price_oscillator_signal` double DEFAULT NULL,`percentage_price_oscillator_hist` double DEFAULT NULL,`percentage_price_oscillator_decisions` varchar(45) DEFAULT NULL,`price_momentum_oscillator` double DEFAULT NULL,`price_momentum_oscillator_signal` double DEFAULT NULL,`price_momentum_oscillator_decisions` varchar(45) DEFAULT NULL,`ichimoku_lead_span1` double DEFAULT NULL,`ichimoku_lead_span2` double DEFAULT NULL,`ichimoku_lead_decisions` varchar(45) DEFAULT NULL,`macd` double DEFAULT NULL,`macd_signal` double DEFAULT NULL,`macd_decisions` varchar(45) DEFAULT NULL,`relative_strength_index` double DEFAULT NULL,`relative_strength_index_decisions` varchar(45) DEFAULT NULL,`typical_price` double DEFAULT NULL,`typical_price_decisions` varchar(45) DEFAULT NULL,`uptrend_high` double DEFAULT NULL,`uptrend_low` double DEFAULT NULL,`downtrend_low` double DEFAULT NULL,`downtrend_high` double DEFAULT NULL,`trendline_decisions` varchar(45) DEFAULT NULL,`aroon_oscillator` double DEFAULT NULL,`aroon_oscillator_decisions` varchar(45) DEFAULT NULL,`aroon_up` double DEFAULT NULL,`aroon_down` double DEFAULT NULL,`aroon_decisions` varchar(45) DEFAULT NULL,`donchian_channel` double DEFAULT NULL,`donchian_channel_decisions` varchar(45) DEFAULT NULL,`mass_index` double DEFAULT NULL,`calc_ulcer_index` double DEFAULT NULL,`chaikin_volatility` double DEFAULT NULL,`average_true_range` double DEFAULT NULL,`standard_deviation` double DEFAULT NULL,`parabolic_sar_raise` double DEFAULT NULL,`parabolic_sar_fall` double DEFAULT NULL,`volatility` double DEFAULT NULL,`quadrant_range_1` double DEFAULT NULL,`quadrant_range_2` double DEFAULT NULL,`quadrant_range_3` double DEFAULT NULL,`quadrant_range_4` double DEFAULT NULL,`quadrant_range_5` double DEFAULT NULL,`drawdown` double DEFAULT NULL,`heikin_close` double DEFAULT NULL,`heikin_open` double DEFAULT NULL,`heikin_low` double DEFAULT NULL,`heikin_high` double DEFAULT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+18256  2020-04-23 09:40:14,837 INFO tableCreation 47 ::: ******************sqlConnection.py execution completed******************
+18256  2020-04-23 09:40:14,837 INFO create_logger 19 ::: ******************log file created*****************
+18256  2020-04-23 09:40:14,837 INFO get_config 14 ::: ******************confReader.py start executing*****************
+18256  2020-04-23 09:40:14,837 INFO get_config 31 ::: ************ confReader.py executed successfully ***************
+18256  2020-04-23 09:40:14,837 INFO main 1313 ::: config file data :: {'inputdbprop': {'hostname': 'localhost', 'dbname': 'nse', 'dbusername': 'nse', 'dbpassword': 'Happy123'}, 'tablename': 'nsesignals', 'sqlconnection': '../sql/nsesignals.sql', 'requirements': '../lib/requirements.txt'}
+18256  2020-04-23 09:40:14,837 INFO db_connet 1241 ::: ******************connected to output table in mysql******************
+18256  2020-04-23 09:40:14,837 INFO getSignals 1250 ::: ******************get signal execution started***********************
+18256  2020-04-23 09:40:14,837 INFO getSignals 1255 ::: *******************Database connection established********************
+18256  2020-04-23 09:40:56,509 INFO getSignals 1259 ::: ****************Required data fetched from database*********************
+18256  2020-04-23 09:40:57,272 INFO getSignals 1264 ::: *************************Function for signal mining created******************
+18256  2020-04-23 10:11:40,347 ERROR getSignals 1290 ::: error ::(1062, "Duplicate entry 'LIBAS' for key 'nsesignals.PRIMARY'")
+Traceback (most recent call last):
+  File "D:\signals and decisions\bin\getSignals.py", line 1288, in getSignals
+    cur.execute(isql)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'LIBAS' for key 'nsesignals.PRIMARY'")
+18256  2020-04-23 10:15:49,933 ERROR getSignals 1290 ::: error ::(1062, "Duplicate entry 'MVL' for key 'nsesignals.PRIMARY'")
+Traceback (most recent call last):
+  File "D:\signals and decisions\bin\getSignals.py", line 1288, in getSignals
+    cur.execute(isql)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'MVL' for key 'nsesignals.PRIMARY'")
+18256  2020-04-23 10:15:55,788 ERROR getSignals 1290 ::: error ::(1062, "Duplicate entry 'NAGAROIL' for key 'nsesignals.PRIMARY'")
+Traceback (most recent call last):
+  File "D:\signals and decisions\bin\getSignals.py", line 1288, in getSignals
+    cur.execute(isql)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'NAGAROIL' for key 'nsesignals.PRIMARY'")
+18256  2020-04-23 10:32:37,033 ERROR getSignals 1290 ::: error ::(1062, "Duplicate entry 'TEXRAIL' for key 'nsesignals.PRIMARY'")
+Traceback (most recent call last):
+  File "D:\signals and decisions\bin\getSignals.py", line 1288, in getSignals
+    cur.execute(isql)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'TEXRAIL' for key 'nsesignals.PRIMARY'")
+18256  2020-04-23 10:32:45,539 ERROR getSignals 1290 ::: error ::(1062, "Duplicate entry 'TGBHOTELS' for key 'nsesignals.PRIMARY'")
+Traceback (most recent call last):
+  File "D:\signals and decisions\bin\getSignals.py", line 1288, in getSignals
+    cur.execute(isql)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\sainikeshk\AppData\Local\Programs\Python\Python37\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'TGBHOTELS' for key 'nsesignals.PRIMARY'")
+18256  2020-04-23 10:39:15,697 INFO getSignals 1304 ::: | 0:59:04.798213 | 
